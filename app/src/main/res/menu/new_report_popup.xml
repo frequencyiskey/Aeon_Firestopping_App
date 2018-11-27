@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newSurvey"
+        android:title="New Site Survey" />
+
+    <item
+        android:id="@+id/newInstallation"
+        android:title="New Installation Report" />
+
+</menu>
