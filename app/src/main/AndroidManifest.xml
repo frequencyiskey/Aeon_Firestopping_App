@@ -25,8 +25,11 @@
         </activity>
         <activity
             android:name=".ReportsOverviewActivity"
+            android:exported="true"
             android:label="@string/title_activity_reports_overview"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NewSurveyActivity" />
+        <activity android:name=".NewInstallationActivity"></activity>
     </application>
 
 </manifest>

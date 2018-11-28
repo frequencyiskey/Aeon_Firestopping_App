@@ -1,5 +1,6 @@
 package com.backscratch.gabriella.aeonfire;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -23,14 +24,25 @@ public class ReportsOverviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                PopupMenu popupMenu = new PopupMenu(ReportsOverviewActivity.this, fab);
+                final PopupMenu popupMenu = new PopupMenu(ReportsOverviewActivity.this, fab);
                 popupMenu.getMenuInflater().inflate(R.menu.new_report_popup, popupMenu.getMenu());
 
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         Toast.makeText(ReportsOverviewActivity.this, "" + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
-                        return true;
+                        switch (menuItem.getItemId()) {
+                            case R.id.newSurvey:
+                                Intent intent1 = new Intent(ReportsOverviewActivity.this, NewSurveyActivity.class);//firstActivity
+                                startActivity(intent1);
+                                return true;
+                            case R.id.newInstallation:
+                                Intent intent2 = new Intent(ReportsOverviewActivity.this, NewInstallationActivity.class);//second Activity
+                                startActivity(intent2);
+                                return true;
+                            default:
+                                return false;
+                        }
                     }
                 });
 

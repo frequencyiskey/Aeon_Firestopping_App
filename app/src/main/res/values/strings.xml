@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Aeon Firestopping App</string>
+    <string name="app_name">Aeon Fire</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -12,5 +12,10 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="title_activity_reports_overview">ReportsOverviewActivity</string>
+    <!-- strings related to reports overview -->
+    <string name="title_activity_reports_overview">Reports Overview</string>
+    <!-- strings related to new survey -->
+    <string name="title_activity_new_survey">New Site Survey</string>
+    <!-- strings related to new installation -->
+    <string name="title_activity_new_installation">New Installation Report</string>
 </resources>
