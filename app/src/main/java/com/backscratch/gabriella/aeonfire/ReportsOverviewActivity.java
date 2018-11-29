@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.backscratch.gabriella.aeonfire.newsurvey.NewSurveyActivity;
+
 public class ReportsOverviewActivity extends AppCompatActivity {
 
     @Override
@@ -37,8 +39,8 @@ public class ReportsOverviewActivity extends AppCompatActivity {
                                 startActivity(intent1);
                                 return true;
                             case R.id.newInstallation:
-                                Intent intent2 = new Intent(ReportsOverviewActivity.this, NewInstallationActivity.class);//second Activity
-                                startActivity(intent2);
+                                /*Intent intent2 = new Intent(ReportsOverviewActivity.this, NewInstallationActivity.class);//second Activity
+                                startActivity(intent2);*/
                                 return true;
                             default:
                                 return false;
