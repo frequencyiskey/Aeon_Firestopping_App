@@ -1,23 +1,20 @@
-package com.backscratch.gabriella.aeonfire.newsurvey;
+package com.backscratch.gabriella.aeonfire.newinstallation;
 
-
-//import android.app.Fragment;
-//import android.app.FragmentManager;
-//import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
-        import android.support.design.widget.TabLayout;
-        import android.support.v7.app.AppCompatActivity;
-
-        import android.util.Log;
-
-        import com.backscratch.gabriella.aeonfire.R;
+import com.backscratch.gabriella.aeonfire.R;
 import com.backscratch.gabriella.aeonfire.SectionsPageAdapter;
+import com.backscratch.gabriella.aeonfire.newinstallation.Tab1Fragment;
+import com.backscratch.gabriella.aeonfire.newinstallation.Tab2Fragment;
+import com.backscratch.gabriella.aeonfire.newinstallation.Tab3Fragment;
 
-public class NewSurveyActivity extends AppCompatActivity {
+public class NewInstallationActivity extends AppCompatActivity {
 
-    private static final String TAG = "NewSurveyActivity";
+    private static final String TAG = "NewInstallationActivity";
 
     private SectionsPageAdapter mSectionsPageAdapter;
 
@@ -26,7 +23,7 @@ public class NewSurveyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_survey);
+        setContentView(R.layout.activity_new_installation);
         Log.d(TAG, "onCreate: Starting.");
 
         mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());

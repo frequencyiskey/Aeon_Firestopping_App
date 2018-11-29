@@ -1,4 +1,4 @@
-package com.backscratch.gabriella.aeonfire.newsurvey;
+package com.backscratch.gabriella.aeonfire;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

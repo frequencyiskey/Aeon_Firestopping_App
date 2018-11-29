@@ -1,4 +1,4 @@
-package com.backscratch.gabriella.aeonfire.newsurvey;
+package com.backscratch.gabriella.aeonfire.newinstallation;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,7 +19,7 @@ public class Tab2Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_survey_tab2,container,false);
+        View view = inflater.inflate(R.layout.fragment_installation_tab2,container,false);
         btnLIST = (Button) view.findViewById(R.id.btnLIST);
 
         btnLIST.setOnClickListener(new View.OnClickListener() {

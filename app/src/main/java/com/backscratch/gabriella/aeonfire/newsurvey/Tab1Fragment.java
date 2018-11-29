@@ -19,7 +19,7 @@ public class Tab1Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_tab1,container,false);
+        View view = inflater.inflate(R.layout.fragment_survey_tab1,container,false);
         btnFLRPLN = (Button) view.findViewById(R.id.btnFLRPLN);
 
         btnFLRPLN.setOnClickListener(new View.OnClickListener() {
