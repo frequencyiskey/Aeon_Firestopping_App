@@ -1,4 +1,4 @@
-package com.backscratch.gabriella.aeonfire.newinstallation;
+package com.backscratch.gabriella.aeonfire.installation;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

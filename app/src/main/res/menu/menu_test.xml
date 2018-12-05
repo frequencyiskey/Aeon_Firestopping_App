@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.backscratch.gabriella.aeonfire.newsurvey.NewSurveyActivity">
+    tools:context="com.backscratch.gabriella.aeonfire.survey.NewSurveyActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

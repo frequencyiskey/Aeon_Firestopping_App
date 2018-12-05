@@ -29,11 +29,12 @@
             android:label="@string/title_activity_reports_overview"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".newsurvey.NewSurveyActivity"
-            android:label="@string/title_activity_new_survey"></activity>
+            android:name=".survey.NewSurveyActivity"
+            android:label="@string/title_activity_new_survey" />
         <activity
-            android:name=".newinstallation.NewInstallationActivity"
-            android:label="@string/title_activity_new_installation"></activity>
+            android:name=".installation.NewInstallationActivity"
+            android:label="@string/title_activity_new_installation" />
+        <activity android:name=".survey.NewProblemActivity"></activity>
     </application>
 
 </manifest>

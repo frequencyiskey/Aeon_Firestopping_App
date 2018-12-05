@@ -1,4 +1,4 @@
-package com.backscratch.gabriella.aeonfire.newinstallation;
+package com.backscratch.gabriella.aeonfire.survey;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,21 +11,21 @@ import android.widget.Toast;
 
 import com.backscratch.gabriella.aeonfire.R;
 
-public class Tab2Fragment extends Fragment {
-    private static final String TAG = "Tab2Fragment";
+public class Tab1Fragment extends Fragment {
+    private static final String TAG = "Tab1Fragment";
 
-    private Button btnLIST;
+    private Button btnFLRPLN;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_installation_tab2,container,false);
-        btnLIST = (Button) view.findViewById(R.id.btnLIST);
+        View view = inflater.inflate(R.layout.fragment_survey_tab1,container,false);
+        btnFLRPLN = (Button) view.findViewById(R.id.btnFLRPLN);
 
-        btnLIST.setOnClickListener(new View.OnClickListener() {
+        btnFLRPLN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 2",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 1",Toast.LENGTH_SHORT).show();
             }
         });
 

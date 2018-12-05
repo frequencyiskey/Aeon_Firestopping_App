@@ -10,8 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import com.backscratch.gabriella.aeonfire.newinstallation.NewInstallationActivity;
-import com.backscratch.gabriella.aeonfire.newsurvey.NewSurveyActivity;
+import com.backscratch.gabriella.aeonfire.installation.NewInstallationActivity;
+import com.backscratch.gabriella.aeonfire.survey.NewSurveyActivity;
 
 public class ReportsOverviewActivity extends AppCompatActivity {
 

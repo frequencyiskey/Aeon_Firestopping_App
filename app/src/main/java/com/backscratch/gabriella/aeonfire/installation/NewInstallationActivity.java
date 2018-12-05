@@ -1,4 +1,4 @@
-package com.backscratch.gabriella.aeonfire.newinstallation;
+package com.backscratch.gabriella.aeonfire.installation;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -8,9 +8,6 @@ import android.util.Log;
 
 import com.backscratch.gabriella.aeonfire.R;
 import com.backscratch.gabriella.aeonfire.SectionsPageAdapter;
-import com.backscratch.gabriella.aeonfire.newinstallation.Tab1Fragment;
-import com.backscratch.gabriella.aeonfire.newinstallation.Tab2Fragment;
-import com.backscratch.gabriella.aeonfire.newinstallation.Tab3Fragment;
 
 public class NewInstallationActivity extends AppCompatActivity {
 
