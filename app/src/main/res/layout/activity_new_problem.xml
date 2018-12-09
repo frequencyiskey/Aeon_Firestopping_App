@@ -8,207 +8,220 @@
     android:fitsSystemWindows="true"
     tools:context=".survey.NewSurveyActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <android.support.design.widget.AppBarLayout
-            android:id="@+id/appbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/appbar_padding_top"
-            android:theme="@style/AppTheme.AppBarOverlay">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:layout_scrollFlags="scroll|enterAlways"
-                app:popupTheme="@style/AppTheme.PopupOverlay"
-                app:title="New Problem">
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/appbar_padding_top"
+                android:theme="@style/AppTheme.AppBarOverlay">
 
-                <Button
-                    android:id="@+id/btnSAVE"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="10dp"
-                    android:backgroundTint="@color/colorPrimaryDark"
-                    android:text="Save"
-                    android:textColor="@color/colorPrimaryWhite" />
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:title="New Problem">
 
-            </android.support.v7.widget.Toolbar>
-        </android.support.design.widget.AppBarLayout>
+                    <Button
+                        android:id="@+id/btnSAVE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="Save"
+                        android:textColor="@color/colorPrimaryWhite" />
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
 
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp">
 
-            <TableRow>
+                <TableRow
+                    android:layout_width="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:paddingHorizontal="20dp"
-                    android:text="ID:"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingHorizontal="20dp"
+                        android:text="ID:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/editIdNo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:hint="ID No."
-                    android:paddingHorizontal="20dp"
-                    android:textSize="16dp" />
-            </TableRow>
+                    <EditText
+                        android:id="@+id/editIdNo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="left"
+                        android:hint="ID No."
+                        android:paddingHorizontal="20dp"
+                        android:textSize="16dp" />
+                </TableRow>
 
-            <TableRow>
+                <TableRow
+                    android:layout_width="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:paddingHorizontal="20dp"
-                    android:text="Location:"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingHorizontal="20dp"
+                        android:text="Location:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/editLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:hint="Location information"
-                    android:paddingHorizontal="20dp"
-                    android:textSize="16dp" />
-            </TableRow>
+                    <EditText
+                        android:id="@+id/editLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:hint="Location information"
+                        android:paddingHorizontal="20dp"
+                        android:textSize="16dp" />
+                </TableRow>
 
-            <TableRow>
+                <TableRow
+                    android:layout_width="match_parent">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:paddingHorizontal="20dp"
-                    android:text="Problem:"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingHorizontal="20dp"
+                        android:text="Problem:"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/editProblem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:hint="Problem summary"
-                    android:paddingHorizontal="20dp"
-                    android:textSize="16dp" />
-            </TableRow>
-        </TableLayout>
+                    <EditText
+                        android:id="@+id/editProblem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="left"
+                        android:hint="Problem summary"
+                        android:paddingHorizontal="20dp"
+                        android:textSize="16dp" />
+                </TableRow>
+            </TableLayout>
 
-        <Button
-            android:id="@+id/addPhotoButton"
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:gravity="center"
-            android:text="+"
-            android:textSize="40sp" />
+            <Button
+                android:id="@+id/addPhotoButton"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="40sp" />
 
-        <TableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginVertical="20dp"
-            android:stretchColumns="*">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:stretchColumns="*">
 
-            <TableRow android:paddingVertical="5dp">
+                <TableRow android:paddingVertical="5dp">
 
-                <RadioButton
-                    android:id="@+id/radioCB"
-                    android:layout_gravity="center"
-                    android:text="CB" />
+                    <RadioButton
+                        android:id="@+id/radioCB"
+                        android:layout_gravity="center"
+                        android:text="CB" />
 
-                <RadioButton
-                    android:id="@+id/radioIM"
-                    android:layout_gravity="center"
-                    android:text="IM" />
+                    <RadioButton
+                        android:id="@+id/radioIM"
+                        android:layout_gravity="center"
+                        android:text="IM" />
 
-                <RadioButton
-                    android:id="@+id/radioBM"
-                    android:layout_gravity="center"
-                    android:text="BM" />
-            </TableRow>
+                    <RadioButton
+                        android:id="@+id/radioBM"
+                        android:layout_gravity="center"
+                        android:text="BM" />
+                </TableRow>
 
-            <TableRow android:paddingVertical="5dp">
+                <TableRow android:paddingVertical="5dp">
 
-                <RadioButton
-                    android:id="@+id/radioIEJ"
-                    android:layout_gravity="center"
-                    android:text="IEJ" />
+                    <RadioButton
+                        android:id="@+id/radioIEJ"
+                        android:layout_gravity="center"
+                        android:text="IEJ" />
 
-                <RadioButton
-                    android:id="@+id/radioIP"
-                    android:layout_gravity="center"
-                    android:text="IP" />
+                    <RadioButton
+                        android:id="@+id/radioIP"
+                        android:layout_gravity="center"
+                        android:text="IP" />
 
-                <RadioButton
-                    android:id="@+id/radioIPC"
-                    android:layout_gravity="center"
-                    android:text="IPC" />
-            </TableRow>
+                    <RadioButton
+                        android:id="@+id/radioIPC"
+                        android:layout_gravity="center"
+                        android:text="IPC" />
+                </TableRow>
 
-            <TableRow android:paddingVertical="5dp">
+                <TableRow android:paddingVertical="5dp">
 
-                <RadioButton
-                    android:id="@+id/radioCTS"
-                    android:layout_gravity="center"
-                    android:text="CTS" />
+                    <RadioButton
+                        android:id="@+id/radioCTS"
+                        android:layout_gravity="center"
+                        android:text="CTS" />
 
-                <RadioButton
-                    android:id="@+id/radioLBC"
-                    android:layout_gravity="center"
-                    android:text="LBC" />
+                    <RadioButton
+                        android:id="@+id/radioLBC"
+                        android:layout_gravity="center"
+                        android:text="LBC" />
 
-                <RadioButton
-                    android:id="@+id/radioHEM"
-                    android:layout_gravity="center"
-                    android:text="HEM" />
-            </TableRow>
+                    <RadioButton
+                        android:id="@+id/radioHEM"
+                        android:layout_gravity="center"
+                        android:text="HEM" />
+                </TableRow>
 
-            <TableRow android:paddingVertical="5dp">
+                <TableRow android:paddingVertical="5dp">
 
-                <RadioButton
-                    android:id="@+id/radioIPW"
-                    android:layout_gravity="center"
-                    android:text="IPW" />
+                    <RadioButton
+                        android:id="@+id/radioIPW"
+                        android:layout_gravity="center"
+                        android:text="IPW" />
 
-                <RadioButton
-                    android:id="@+id/radioFRAH"
-                    android:layout_gravity="center"
-                    android:text="FRAH" />
+                    <RadioButton
+                        android:id="@+id/radioFRAH"
+                        android:layout_gravity="center"
+                        android:text="FRAH" />
 
-            </TableRow>
+                </TableRow>
 
-        </TableLayout>
+            </TableLayout>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:padding="20dp"
-            android:hint="Enter product notes here" />
-
-    </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="Enter product notes here"
+                android:padding="20dp" />
+        </LinearLayout>
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>
